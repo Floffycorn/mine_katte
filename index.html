@@ -1,0 +1,82 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <link rel="icon" href="images/kat.png">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Mine Katte</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<div class="flexmenu">
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="/mine_katte">Forside</a></li>
+                <li><a href="/mira">Mira</a></li>
+                <li><a href="/gaia">Gaia</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="hero-image">
+    <img src="images/begge_1.jpg">
+    <div class="hero-text">
+        <h1>All cats are angels</h1>
+        <p>don't you agree?</p>
+    </div>
+</div>
+<br><br>
+
+<div class="container2">
+    <div class="card">
+        <a href="/mira"><img src="images/mira_1.jpg"></a>
+        <div class="container">
+            <h4><b>Mira</b></h4>
+            <p>Hunkat fra gaden</p>
+        </div>
+    </div>
+    <br>
+    <div class="card">
+        <a href="/gaia"><img src="images/gaia_1.jpg"></a>
+        <div class="container">
+            <h4><b>Gaia</b></h4>
+            <p>Hunkat fra kattehjem</p>
+        </div>
+    </div>
+    <br>
+</div>
+<br><br>
+
+<div class="footer">
+    <div>
+        <br>
+        <p>Natasja & Mathias</p>
+    </div>
+</div>
+
+</body>
+</html>
